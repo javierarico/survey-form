@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form - FreeCodeCamp Challenge</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+<body>
+	<div class="container">
+  		<header class="header">
+    		<h1 id="title">freeCodeCamp Survey Form</h1>
+    		<p id="description">Thank you for taking the time to help us improve the platform</p>
+  		</header>
+  	<form id="survey-form">
+    	<div class="form-group">
+      		<label id="name-label" class="content-label" for="name">Name</label>
+      		<input type="text" id="name" class="form-content" placeholder="Enter your name" required>
+    	</div>
+    	<div class="form-group">
+      		<label id="email-label" class="content-label" for="email">Email</label>
+      		<input type="email" id="email" class="form-content" placeholder="Enter your Email" required>
+    	</div>
+    		<div class="form-group">
+      		<label id="number-label" class="content-label" for="number">Age <span>(optional)</span></label>
+      		<input type="number" id="number" class="form-content" min="10" max="99" placeholder="Age">
+    	</div>
+    	<div class="form-group">
+      		<label id="option-label" class="content-label" for="option">Which option best describes your current role?</label>
+      		<select id="option" class="form-content">
+        		<option disabled selected value>Select current role</option>
+        		<option value="student">Student</option>
+        		<option value="full-time-job">Full Time Job</option>
+        		<option value="full-time-learner">Full Time Learner</option>
+        		<option value="prefer-not-to-say">Prefer Not To Say</option>
+        		<option value="other">Other</option>
+      		</select>
+    	</div>
+    	<div class="form-group">
+      		<label id="recommend-label" class="content-label" for="recommend">Would you recommend freeCodeCamp to a friend?</label>
+      		<div class="definitely">
+        		<input type="radio" value="definitely" name="recommendation" checked> Definitely</input>
+      		</div>
+      		<div class="maybe">
+        		<input type="radio" value="maybe" name="recommendation"> Maybe</input>
+      		</div>
+      		<div class="not-sure">
+        		<input type="radio" value="not-sure" name="recommendation"> Not Sure</input>
+      		</div>
+    	</div>
+ 		<div class="form-group">
+      		<label id="feature-label" class="content-label" for="feature">What is your favorite feature of freeCodeCamp?</label>
+      		<select id="dropdown" class="form-content">
+        		<option disabled selected value>Select an option</option>
+        		<option value="challenges">Challenges</option>
+        		<option value="projects">Projects</option>
+        		<option value="community">Community</option>
+        		<option value="open-source">Open Source</option>
+   			</select>
+    	</div>      
+    	<div class="form-group">
+      		<label name="improved-label" class="content-label">What would you like to see improved? (Check all that apply)</label>
+      		<div class="checkbox">
+        		<input type="checkbox" value="front-end-projects"> Front-end Projects</input>
+      		</div>
+      		<div class="checkbox">
+        		<input type="checkbox" value="back-end-projects"> Back-end Projects</input>
+      		</div>
+      		<div class="checkbox">
+        		<input type="checkbox" value="data-visualisation"> Data Visualisation</input>
+      		</div>
+      		<div class="checkbox">
+        		<input type="checkbox" value="Challenges"> Challenges</input>
+      		</div>
+      		<div class="checkbox">
+        		<input type="checkbox" value="open-source-community"> Open Source Community</input>
+      		</div>
+      		<div class="checkbox">
+        		<input type="checkbox" value="gitter-help-rooms"> Gitter Help Rooms</input>
+      		</div>
+      		<div class="checkbox">
+        		<input type="checkbox" value="videos"> Videos</input>
+      		</div>
+      		<div class="checkbox">
+        		<input type="checkbox" value="city-meetups"> City Meetups</input>
+      		</div>
+      		<div class="checkbox">
+        		<input type="checkbox" value="wiki"> Wiki</input>
+      		</div>
+      		<div class="checkbox">
+        		<input type="checkbox" value="Forum"> Forum</input>
+      		</div>
+      		<div class="checkbox">
+        		<input type="checkbox" value="additional-courses"> Additional Courses</input>
+      		</div>
+    	</div>
+    	<div class="form-group">
+      		<label class="content-label">Any comments or suggestions?</label>
+      		<textarea name="textarea" placeholder="Enter your comment here..."></textarea>
+    	</div>
+    	<div class="form-group">
+      		<button id="submit" type="submit">Submit</button>
+    	</div>
+    </div>
+  </form>
+</div>
+<div class="attribution">
+	Challenge by <a href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form" target="_blank">FreeCodeCamp</a>. 
+    Coded by <a href="https://github.com/javierarico" target="_BLANK">Javiera Rico</a>.
+ </div>
+</body>
+</html>
